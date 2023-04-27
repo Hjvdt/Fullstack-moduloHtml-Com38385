@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Dongle:wght@300&family=Noto+Serif+Hebrew:wght@500&family=Noto+Serif+KR:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* ------------- Body ---------------- */
+body{
+    background-image: url(../asset/img/fondoTubos.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+.hero{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"
+    ;
+}
+
+/* --------------- header --------------------- */
+header{
+    grid-area: header;
+    background-color: #d0b1f7;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "logo navbar"
+    ;
+    align-items: center;
+}
+.logo{
+    grid-area: logo;
+    
+}
+.navbar{
+    grid-area: navbar;
+    justify-self:end;
+    justify-content: space-between;    
+}
+.navbar-flex{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    font-family: 'Noto Serif Hebrew', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar li a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.navbar li a:hover {
+    color: rgb(186, 46, 199);
+}
+
+
+/* --------------- main ---------------------- */
+main{
+    grid-area: main;
+    background-color: #d0b1f7;
+    /* background-image: -webkit-linear-gradient(90deg, #f9010100 0%,#f9017d91 20%, #c301f991 100%),(url(../asset/img/fondoTubos.jpg)); */
+    background-image: url(../asset/img/fondoTubos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    text-decoration: none;
+    list-style: none;
+    
+}
+main {
+    border-style: groove none none none;
+    height: auto;
+    width: 100%;
+    align-items: center;
+
+}
+
+
+.contenedor {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#Buscador {
+    width: 400px;
+    height: 35px;
+    background-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+    border: transparent;
+    border-bottom: solid 1px #ccc;
+    padding: 10px 10px 10px 30px;
+    margin-top: 100px;
+    outline: none;
+}
+
+.texto {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+}
+
+main div h1 {
+    color: black;
+    font-weight: 800px;
+    font-size: 60px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: double;
+    margin-bottom: 20px;
+    font-family: noto, hebrew, sans-serif;
+}
+
+.box{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "card1 card2 card3"
+    ;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1{
+    grid-area: card1;
+}
+
+.card2{
+    grid-area: card2;
+}
+
+.card3{
+    grid-area: card3;
+}
+
+.card{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    border: rgba(7, 41, 96, 0.898) solid 0.1px;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    background-color:  #f1e5ff;
+    text-align: center;
+}
+
+
+.card:hover{
+    border: #672960 solid 3px;
+}
+
+.card div {
+    height:90%;
+    width: 100%;
+}
+
+.card div img {
+    height:90%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card div a{
+    height:90%;
+    width: 100%;
+    
+}
+
+.card div a img {
+    height:90%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.leyenda {
+    height: 200px;
+    width: 100%;
+    border-radius: 0px;
+    text-align: center;
+}
+
+
+.leyenda h3 {
+    margin: -3px;
+    font-size: 16px;
+    font-weight: 200px;
+    text-decoration: double;
+    color: rgba(7, 41, 96, 0.898);
+
+}
+
+
+.leyenda a {
+    font-size: 16px;
+    text-decoration: solid;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(7, 41, 96, 0.898);
+    height: 100%;
+    border-radius: 5px;
+    padding: 2px 2px;
+
+
+}
+
+
+/* --------------- footer --------------- */
+footer{
+    grid-area: footer;
+    background-color: rgba(113, 17, 203, 0.315);
+    justify-self: center;
+    margin-top: 20px;
+    border-style: groove none none none;
+    font-weight: 200px;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "phone contacto seguinos"
+    ;
+    align-items:center;
+    justify-content: center;
+}
+
+.contenedor-contacto {
+    height: 100%;
+    background-color: rgb(221, 219, 219);
+    border-radius: 5px;
+
+}
+.contacto {
+    grid-area: contacto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacto li {
+    color: #0e0d0d;
+    width: auto;
+}
+.contacto li a {
+    text-decoration: none;
+    list-style: none;
+    color: #0e0d0d;
+}
+.contacto li a img {
+    width: 30px;
+}
+.Contacto li a img:hover {
+    width: 32px;
+    transition: 0.3s;
+}
+
+.seguinos {
+    grid-area: seguinos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seguinos li {
+    color: #0e0d0d;
+    width: auto;
+}
+.seguinos li a {
+    text-decoration: none;
+    list-style: none;
+    color: #0e0d0d;
+}
+.seguinos li a img {
+    width: 30px;
+}
+.seguinos li a img:hover {
+    width: 32px;
+    transition: 0.3s;
+
+}
+
+.phone {
+    grid-area: phone;
+    text-align: center;
+}
+.phone li img {
+    width: 30px;
+    margin-bottom: -7px;
+}
+
+.contenedor-form {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.contenedor-form div {
+    flex-grow: 1;
+}
+
+.contenedor-form div ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.derechos h2 {
+    margin: 5px 5px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+footer h3 {
+    color: rgb(160, 92, 171);
+    text-align: center;
+    margin: 15px 15px;
+    background-color: #34095f;
+}
+
+.botonContactar {
+    margin-top: 25px;
+    width: 100%;
+    padding: 10px;
+    background-color: #423d48;
+    color: white;
+    border-radius: 4px;
+    border-color: #fff;
+    font-size: 14px;
+}
+
+.botonContactar:hover {
+    background-color: #094e5a;
+}
+
+
+/* ------- contacto.html ----------------- */
+/* .contacto {
+    width: 400px;
+    padding: 30px;
+    border: #183A1D solid 1px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #183A1D;
+}
+
+.contacto h3 {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'calibri';
+    margin-bottom: 10px;
+
+}
+
+.campos {
+    width: 100%;
+    background-color: #183A1D;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: solid white 0.8px;
+    font-family: 'calibri';
+    font-size: 16px;
+}
+
+
+.contacto p {
+    font-size: 14px;
+    color: white;
+    margin: 10px 0px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.boton {
+    width: 100%;
+    padding: 10px;
+    background-color: #560757;
+    color: white;
+    border-radius: 4px;
+    border-color: #fff;
+    font-size: 14px;
+    ;
+}
+
+
+.boton:hover {
+    background-color: #6b778a;
+} */
+
+
+
+
+
+
