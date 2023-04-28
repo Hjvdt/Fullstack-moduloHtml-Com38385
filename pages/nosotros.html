@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Primer Preentrega-About us</title>
-        <link rel="icon" type="image/x-icon" href='../assets/img/favicon.ico.png' />
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sistema de Turnos - Segunda Preentrga</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Alice&family=Dongle:wght@300&family=Noto+Serif+Hebrew:wght@500&family=Noto+Serif+KR:wght@700&display=swap');
+        </style>
         <link rel="stylesheet" href="../css/style.css">
     </head>
+
     <body>
+    <div class="hero">
         <header>
-            <div>
-                <a href="../index.html"><img src="../assets/img/logo.jpg" alt="logo"></a>
+            <div class="logo">
+                <a href="../index.html"><img src="../asset/img/Logo.png" alt="logo"></a>
             </div>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="./turnos.html">turnos</a></li>
-                    <li><a href="./resultados.html">resultados</a></li>
-                    <li><a href="./ingreso.html">ingreso</a></li>
+            <nav class=" navbar">
+                <ul class="navbar-flex">
+                    <li><a class="navbar-menu" href="../index.html">Inicio</a></li>
+                    <li><a class="navbar-menu" href="../pages/nosotros.html">Nosotros</a></li>
+                    <li><a class="navbar-menu" href="../pages/turnos.html">Turnos</a></li>
+                    <li><a class="navbar-menu" href="../pages/resultados.html">Resultados</a></li>
+                    <li><a class="navbar-menu" href="../pages/ingreso.html">Ingreso</a></li>
                 </ul>
             </nav>
         </header>
@@ -40,15 +45,57 @@
             </div>
         </main>
         <footer>
-            <nav>
-                <div>
-                    <a href="https://wa.me/" target="_blank" class="social-icons"><img src="../assets/img/whatsapp.png" alt="Linkedin"></a>
-                    <a href="../pages/contacto.html" target="_blank" class="social-icons"><img src="../assets/img/email.png" alt="Contacto"></a>
-                    <a href="https://www.linkedin.com" target="_blank" class="social-icons"><img src="../assets/img/linkedin.png" alt="Linkedin"></a>
-                    <a href="https://www.facebook.com" target="_blank" class="social-icons"><img src="../assets/img/face.png" alt="Facebook"></a>
-                    <a href="https://www.instagram.com" target="_blank" class="social-icons"><img src="../assets/img/instagram.png" alt="Instagram"></a>
+            <div class="contenedor-contacto">
+                <div class="contenedor-form">
+                    <div>
+                        <h3>Contacto</h3>
+                        <ul class="contacto">
+                            <li>
+                                <a href="https://www.gmail.com/" target="_blank">
+                                    <img src="../asset/icons/email.png" alt="Email">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/" target="_blank">
+                                    <img src="../asset/icons/whatsapp.png" alt="whatsapp">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Teléfono </h3>
+                        <ul class="phone">
+                            <li>
+                                <img src="../asset/icons/telefono.png" alt="Phone">
+                                <strong>(011) 555-5555</strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Síguenos</h3>
+                        <ul class="seguinos">
+                            <li>
+                                <a href="https://www.linkedin.com/" target="_blank">
+                                    <img src="../asset/icons/linkedin.png" alt="Lnkedin">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="../asset/icons/instagram.png" alt="Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src="../asset/icons/face.png" alt="Facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </nav>
+                <div class="derechos">
+                    <h2>© 2023 Hjvdt - Todos los derechos reservados.</h2>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
