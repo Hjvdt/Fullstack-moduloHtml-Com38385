@@ -9,7 +9,7 @@ html{
 }
 /* ----------------- Generales --------------- */
 body{
-    font-family: 'Noto Serif Hebrew', sans-serif;
+    font-family: 'Noto Serif Hebrew', serif;
     margin: 0;
     display: grid;
     width: 100%;
@@ -42,7 +42,7 @@ button{
 }
 
 button:hover{
-    background-color: rgba(90, 15, 161, 0.491);
+    background-color: rgba(161, 15, 132, 0.491);
 }
 
 .container{
@@ -89,7 +89,7 @@ header a{
 }
 
 header a:hover{
-    color: rgba(142, 53, 226, 0.775);
+    color: rgba(226, 53, 142, 0.775);
 }
 
 /* ------------------------ Main ------------------ */
@@ -407,7 +407,7 @@ footer p{
 }
 
 
-@media (min-width: 720px){
+@media (min-width: 768px){
     header{
         position: fixed;
         width: 100%;
@@ -430,7 +430,7 @@ footer p{
         font-size: 3em;
         margin-top: 120px;
         margin-bottom: 20px;
-        text-shadow: 2px 2px rgb(138, 58, 151);
+        text-shadow: 4px 4px rgb(138, 58, 151);
     }
 
     #hero h2{
@@ -467,3 +467,57 @@ footer .contenedor-form{
 
 }
 
+@media (min-width: 1024px){
+    .navbar-menu{
+        font-family: 'Noto Serif Hebrew', serif;
+        font-size: 3vh;
+    }
+
+    #box-container .box{
+        display: flex;
+        justify-content: center;
+    }
+
+    #box-container p{
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #box-container .card{
+        padding: 50px;
+        background-size: 100% 100%;
+        box-shadow: 2px 2px rgb(199, 101, 232);
+        
+    }
+
+    .card:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../asset/img/turnos.jpg");
+
+    }
+
+    .card:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../asset/img/resultados.png");
+    }
+
+    .card:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../asset/img/contactenos.png");
+
+    }
+
+}
