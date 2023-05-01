@@ -421,7 +421,7 @@ footer p{
     header nav{
         flex-direction: row;
         padding-bottom: 0;
-        padding-right: 20px;
+        padding-right: 50px;
         justify-self:end;
         justify-content: space-between;
     }
