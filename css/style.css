@@ -1,312 +1,294 @@
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Dongle:wght@300&family=Noto+Serif+Hebrew:wght@500&family=Noto+Serif+KR:wght@700&display=swap');
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-/* ------------- Body ---------------- */
+
+html{
+    scroll-behavior: smooth;
+}
+/* ----------------- Generales --------------- */
 body{
-    background-image: url(../asset/img/fondoTubos.jpg);
-    background-repeat: no-repeat;
-    
-}
-
-.hero{
+    font-family: 'Noto Serif Hebrew', sans-serif;
+    margin: 0;
     display: grid;
     width: 100%;
     height: 100vh;
-    grid-template-columns: 300px 1fr;
-    grid-template-rows: 100px 1fr 50px;
+    grid-template-columns: 100;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: 
-    "header header"
-    "main main"
-    "footer footer"
+    "header"
+    "main"
+    "footer"
     ;
 }
 
-/* --------------- header --------------------- */
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgba(90, 15, 161, 0.491);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:blueviolet; }
+
+/* --------------------------- Header ------------------- */
 header{
     grid-area: header;
-    background-color: #d0b1f7;
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "logo navbar"
-    ;
-    align-items: center;
-}
-.logo{
-    grid-area: logo;
+    background-color: rgb(245,245,245);
     
 }
-.navbar{
-    grid-area: navbar;
-    justify-self:end;
-    justify-content: space-between;    
-}
-.navbar-flex{
-    display: flex;
-    text-decoration: none;
-    justify-content: space-between;
-    gap: 20px;
-    list-style: none;
-    font-family: 'Noto Serif Hebrew', serif;
-    font-size: 20px;
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
     font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
 }
-.navbar li a {
-    color: black;
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(200, 170, 229);
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+header a{
+    padding: 5px 12px;
     text-decoration: none;
-
+    font-weight: bold;
+    color: black;
 }
 
-.navbar li a:hover {
-    color: rgb(186, 46, 199);
+header a:hover{
+    color: rgba(142, 53, 226, 0.775);
 }
 
-
-/* --------------- main ---------------------- */
+/* ------------------------ Main ------------------ */
 main{
     grid-area: main;
-    background-color: #d0b1f7;
-    /* background-image: -webkit-linear-gradient(90deg, #f9010100 0%,#f9017d91 20%, #c301f991 100%),(url(../asset/img/fondoTubos.jpg)); */
-    background-image: url(../asset/img/fondoTubos.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    text-decoration: none;
-    list-style: none;
-    
-}
-main {
-    border-style: groove none none none;
-    height: auto;
-    width: 100%;
-    align-items: center;
-
 }
 
-
-.contenedor {
-    width: 100%;
-    height: 400px;
+#hero{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../asset/img/fondoTubos.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
 }
 
-#Buscador {
-    width: 400px;
-    height: 35px;
-    background-size: 14px;
-    text-align: center;
-    border-radius: 10px;
-    border: transparent;
-    border-bottom: solid 1px #ccc;
-    padding: 10px 10px 10px 30px;
-    margin-top: 100px;
-    outline: none;
+#hero h1{
+    color: white;
+    font-size: 2.5em;
 }
 
-.texto {
-    color: #fff;
-    text-align: center;
-    width: 80%;
+#hero h2{
+    color: rgb(246, 210, 247);
+    font-size: 1.0em;
 }
 
-main div h1 {
-    color: rgb(16, 4, 121);
-    font-family: 'Noto Serif Hebrew', serif;
-    font-weight: 800px;
-    font-size: 60px;
-    margin-top: 20px;
-    text-align: center;
-    text-decoration: double;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px rgb(0, 238, 255);
-}
-
-main div h2 {
-    color: rgb(16, 4, 121);
-    font-family: 'Noto Serif Hebrew', serif;
-    font-weight: 800px;
-    font-size: 40px;
-    margin-top: 20px;
-    text-align: center;
-    text-decoration: double;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px rgb(0, 238, 255);
-    
-}
-
-.box{
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    justify-self: center;
-    gap: 20px;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "card1 card2 card3"
-    ;
-    align-items: center;
-    justify-content: center;
-}
-
-.card1{
-    grid-area: card1;
-}
-
-.card2{
-    grid-area: card2;
-}
-
-.card3{
-    grid-area: card3;
-}
-
-.card{
-    height: 400px;
-    width: 300px;
-    border-radius: 10px;
-    border: rgba(76, 4, 124, 0.898) solid 0.1px;
-    display: flex;
-    flex-direction: column;
-    align-items: first baseline;
-    background-color:  #f1e5ff;
-    text-align: center;
-}
-
-
-.card:hover{
-    border: #672960 solid 5px;
-}
-
-.card div {
-    height:90%;
-    width: 100%;
-}
-
-.card div img {
-    height:100%;
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
-    
-}
-
-.card div a{
-    height:90%;
-    width: 100%;
-    
-}
-
-.card div a img {
-    height:90%;
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
-    
-}
-
-.leyenda {
-    height: 200px;
-    width: 100%;
-    border-radius: 0px;
-    text-align: center;
-}
-
-
-.leyenda h3 {
-    margin: -3px;
-    font-size: 18px;
-    font-weight: 200px;
-    text-decoration: double;
-    font-family: 'Noto Serif Hebrew', serif;
-    color: black;
-    margin-bottom:50px;
+#hero button{
+    font-size: 1.75em;
     margin-top: 50px;
 }
 
 
-.leyenda a {
-    font-size: 20px;
-    text-decoration: solid;
-    text-decoration: none;
-    color: #fff;
-    background-color: rgba(57, 7, 96, 0.898);
-    height: 100%;
-    border-radius: 5px;
-    padding: 2px 2px;
-    
+#box-container{
+    background-color: rgb(30, 81, 139);
+    color: white;
+    text-align: center;
 }
 
+#box-container .container{
+    padding: 50px 12px;
+}
 
-/* --------------- footer --------------- */
+#box-container h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#box-container p{
+    display: none;
+}
+
+#box-container .card{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.card:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../asset/img/turnos.jpg");
+
+}
+
+.card:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../asset/img/resultados.png");
+}
+
+.card:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../asset/img/contactenos.png");
+
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../asset/img/sedes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#final h2{
+    font-size: 12vw;
+}
+
+#final button{
+    font-size: 5vw;
+    margin-top: 20px;
+}
+/* -------------------- Footer ------------------------- */
 footer{
     grid-area: footer;
+    background-color: rgb(230,230,230);
     height: 100%;
     width: 100%;
-    font-family: 'Noto Serif Hebrew', serif;
-    background-color: rgba(113, 17, 203, 0.315);
     justify-self: center;
     margin-top: 10px;
     border-style: groove none none none;
-    font-weight: 200px;
-    /* display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
-    "phone contacto seguinos"
-    ; */
-    
-    
+    "contacto"
+    "c-1"
+    "phone"
+    "c-2" 
+    "seguinos"
+    "c-3"
+    ;
+}
+.c-1{
+    grid-area: c-1;
+}
+.c-2{
+    grid-area: c-2;
+}
+.c-3{
+    grid-area: c-3;
+}
+footer p{
+    margin: 0;
+    padding: 10px;
+    font-size: 1em;
+    color: rgb(100,100,100);
 }
 
-.contenedor-contacto {
+.container-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
     height: auto;
     width: 100%;
     background-color: rgb(221, 219, 219);
     border-radius: 10px;
-    display: grid;
-    /* grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "phone contacto seguinos"
-    ; */
-
 }
+
+.contenedor-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contacto {
     grid-area: contacto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contacto li {
-    
-    color: #0e0d0d;
-    width: auto;
-}
-.contacto li a {
-    
-    text-decoration: none;
-    list-style: none;
-    color: #0e0d0d;
-}
-.contacto li a img {
-    
-    width: 30px;
-}
-.Contacto li a img:hover {
-    
-    width: 32px;
-    transition: 0.3s;
+
+/* .contacto .phone .seguinos a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.phone {
+    grid-area: phone;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .seguinos {
@@ -315,138 +297,173 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.seguinos li {
-    color: #0e0d0d;
-    width: auto;
-}
-.seguinos li a {
-    text-decoration: none;
-    list-style: none;
-    color: #0e0d0d;
-}
-.seguinos li a img {
-    width: 30px;
-}
-.seguinos li a img:hover {
-    width: 32px;
-    transition: 0.3s;
 
-}
-
-.phone {
-    grid-area: phone;
-    text-align: center;
-}
-.phone li img {
-    width: 30px;
-    margin-bottom: -7px;
-}
-
-.contenedor-form {
+.derechos {
     display: flex;
-    justify-content: space-around;
-
+    justify-content: center;
+    align-items: center;
 }
-
-.contenedor-form div {
-    flex-grow: 1;
-}
-
-.contenedor-form div ul {
-    list-style: none;
-    text-decoration: none;
-}
-
-.derechos h2 {
-    margin: 5px 5px;
-    font-size: 12px;
-    text-align: center;
-    font-weight: 400;
+.derechos p{
+    font-size: 0.5em;
 }
 
 
-footer h3 {
-    color: rgb(160, 92, 171);
-    text-align: center;
-    margin: 15px 15px;
-    background-color: #34095f;
+/* --------------- Resonsive ----------------- */
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #box-container .box{
+        display: flex;
+        justify-content: center;
+    }
+
+    #box-container p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #box-container h2{
+        font-size: 4em;
+    }
+
+    #box-container h3{
+        margin-top: 0;
+    }
+
+    #box-container .card{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .card:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../asset/img/turnos.jpg");
+
+    }
+
+    .card:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../asset/img/resultados.png");
+    }
+
+    .card:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../asset/img/contactenos.png");
+
+    }
+
+    #caracteristicas{
+        background-image: url("media/background-2.jpeg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
 }
 
-.botonContactar {
-    margin-top: 25px;
-    width: 100%;
-    padding: 10px;
-    background-color: #423d48;
-    color: white;
-    border-radius: 4px;
-    border-color: #fff;
-    font-size: 14px;
-}
 
-.botonContactar:hover {
-    background-color: #094e5a;
-}
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
 
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-/* ------- contacto.html ----------------- */
-/* .contacto {
-    width: 400px;
-    padding: 30px;
-    border: #183A1D solid 1px;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 4px;
-    color: #fff;
-    background-color: #183A1D;
-}
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+        justify-self:end;
+        justify-content: space-between;
+    }
 
-.contacto h3 {
-    font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-family: 'calibri';
-    margin-bottom: 10px;
+    #hero h1{
+        font-size: 3em;
+        margin-top: 120px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px rgb(138, 58, 151);
+    }
 
-}
+    #hero h2{
+        font-size: 1.5em;
+    }
 
-.campos {
-    width: 100%;
-    background-color: #183A1D;
-    padding: 10px;
-    color: white;
-    border-radius: 4px;
-    margin-bottom: 20px;
-    border: solid white 0.8px;
-    font-family: 'calibri';
-    font-size: 16px;
-}
+    .container h2{
+        font-size: 2.5em;
+    }
+    .card button{
+        margin-top: 50px;
+    }
 
+    #final h2{
+        font-size: 3em;
+        margin-bottom: 50px;
+    }
 
-.contacto p {
-    font-size: 14px;
-    color: white;
-    margin: 10px 0px;
-    height: 40px;
-    line-height: 40px;
-}
+    #final button{
+        font-size: 1.5em;
+    }
 
-.boton {
-    width: 100%;
-    padding: 10px;
-    background-color: #560757;
-    color: white;
-    border-radius: 4px;
-    border-color: #fff;
-    font-size: 14px;
+footer .contenedor-form{
+    justify-self: center;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-right: 50px;
+    grid-row: auto;
+    grid-template-areas:
+    "contacto phone seguinos"
     ;
 }
 
-
-.boton:hover {
-    background-color: #6b778a;
-} */
-
-
-
-
-
+}
 
