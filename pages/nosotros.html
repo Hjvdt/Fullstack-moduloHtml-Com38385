@@ -1,101 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Turnos - Segunda Preentrga</title>
+    <link rel="icon" type="image/x-icon" href='../asset/img/favicon.ico.png' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alice&family=Dongle:wght@300&family=Noto+Serif+Hebrew:wght@500&family=Noto+Serif+KR:wght@700&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sistema de Turnos - Segunda Preentrga</title>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Alice&family=Dongle:wght@300&family=Noto+Serif+Hebrew:wght@500&family=Noto+Serif+KR:wght@700&display=swap');
-        </style>
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
-
-    <body>
-    <div class="hero">
+<body>
         <header>
-            <div class="logo">
-                <a href="../index.html"><img src="../asset/img/Logo.png" alt="logo"></a>
+            <div class="container">
+                <a  href="../index.html"><img src="../asset/img/Logo.png" alt="logo"></a>
+                <nav class="navbar">
+                    <a class="navbar-menu" href="../index.html">Inicio</a></li>
+                    <a class="navbar-menu" href="../pages/nosotros.html">Nosotros</a>
+                    <a class="navbar-menu" href="../pages/turnos.html">Turnos</a>
+                    <a class="navbar-menu" href="../pages/resultados.html">Resultados</a>
+                    <a class="navbar-menu" href="../pages/ingreso.html">Ingreso</a>
+                </nav>
             </div>
-            <nav class=" navbar">
-                <ul class="navbar-flex">
-                    <li><a class="navbar-menu" href="../index.html">Inicio</a></li>
-                    <li><a class="navbar-menu" href="../pages/nosotros.html">Nosotros</a></li>
-                    <li><a class="navbar-menu" href="../pages/turnos.html">Turnos</a></li>
-                    <li><a class="navbar-menu" href="../pages/resultados.html">Resultados</a></li>
-                    <li><a class="navbar-menu" href="../pages/ingreso.html">Ingreso</a></li>
-                </ul>
-            </nav>
         </header>
         <main>
-            <div class="nosotros">
-                <h1>Sobre Nosotros</h1>
-                <section class="nosotros-1">
-                    <img src="../assets/img/nosotros.jpg" alt="">
-                    <h3>Personal Capacitado</h3>
-                    <p> Los laboratorios de análisis clínicos son instalaciones especializadas,donde se llevan a cabo 
-                    pruebas y análisis en muestras biológicas, como sangre, orina, heces y tejido. <br>
-                    Estos análisis son utilizados para ayudar en el diagnóstico, tratamiento y prevención de enfermedades.<br>
-                    Los profesionales que trabajan en nuestro laboratorio, son técnicos de laboratorio y bioquimicos 
-                    altamente capacitados, que realizan pruebas precisas y confiables utilizando equipos de alta tecnología.<br> 
-                    Laboratorio de Análisis Clínicos es una parte vital de la atención médica moderna, proporcionando 
-                    información valiosa y precisa que ayuda a diagnosticar y tratar enfermedades con mayor precisión y eficacia.</p>
-                </section>
-            </div>
+            <section id="box-container1">
+                <div class="container"></div>
+                    <h1 class="about">Sobre Nosotros</h1>
+                    <section class="nosotros">
+                        <img src="../asset/img/nosotros.jpg" alt="">
+                        <h3>Personal Capacitado</h3>
+                        <p> Los laboratorios de análisis clínicos son instalaciones especializadas,donde se llevan a cabo 
+                        pruebas y análisis en muestras biológicas, como sangre, orina, heces y tejido. 
+                        Estos análisis son utilizados para ayudar en el diagnóstico, tratamiento y prevención de enfermedades.
+                        Los profesionales que trabajan en nuestro laboratorio, son técnicos de laboratorio y bioquimicos 
+                        altamente capacitados, que realizan pruebas precisas y confiables utilizando equipos de alta tecnología. 
+                        Laboratorio de Análisis Clínicos es una parte vital de la atención médica moderna, proporcionando 
+                        información valiosa y precisa que ayuda a diagnosticar y tratar enfermedades con mayor precisión y eficacia.</p>
+                    </section>
+                </div>                       
+            </section>
         </main>
         <footer>
-            <div class="contenedor-contacto">
+            <section class="conteiner-contacto">
                 <div class="contenedor-form">
-                    <div>
-                        <h3>Contacto</h3>
-                        <ul class="contacto">
-                            <li>
-                                <a href="https://www.gmail.com/" target="_blank">
-                                    <img src="../asset/icons/email.png" alt="Email">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://wa.me/" target="_blank">
-                                    <img src="../asset/icons/whatsapp.png" alt="whatsapp">
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="contacto">
+                        <p>Contacto</p>
+                        <a class="c-1" href="https://www.gmail.com/" target="_blank"><img src="../asset/img/email.png" alt="Email"></a>
+                        <a class="c-1" href="https://wa.me/" target="_blank"><img src="../asset/img/whatsapp.png" alt="whatsapp"></a>
                     </div>
-                    <div>
-                        <h3>Teléfono </h3>
-                        <ul class="phone">
-                            <li>
-                                <img src="../asset/icons/telefono.png" alt="Phone">
-                                <strong>(011) 555-5555</strong>
-                            </li>
-                        </ul>
+                    <div class="phone">
+                        <p>Teléfono </p><img class="c-2" src="../asset/img/telefono.png" alt="Phone"><strong>(011) 555-5555</strong>
                     </div>
-                    <div>
-                        <h3>Síguenos</h3>
-                        <ul class="seguinos">
-                            <li>
-                                <a href="https://www.linkedin.com/" target="_blank">
-                                    <img src="../asset/icons/linkedin.png" alt="Lnkedin">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <img src="../asset/icons/instagram.png" alt="Instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/" target="_blank">
-                                    <img src="../asset/icons/face.png" alt="Facebook">
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="seguinos">
+                        <p>Síguenos</p>
+                        <a class="c-3" href="https://www.linkedin.com/" target="_blank"><img src="../asset/img/linkedin.png" alt="Lnkedin"></a>
+                        <a class="c-3" href="https://www.instagram.com/" target="_blank"><img src="../asset/img/instagram.png" alt="Instagram"></a>
+                        <a class="c-3" href="https://www.facebook.com/" target="_blank"><img src="../asset/img/face.png" alt="Facebook"></a>
                     </div>
                 </div>
                 <div class="derechos">
-                    <h2>© 2023 Hjvdt - Todos los derechos reservados.</h2>
+                    <p>© 2023 Hjvdt - Todos los derechos reservados.</p>
                 </div>
-            </div>
+            </section>
         </footer>
     </body>
 </html>
