@@ -156,6 +156,7 @@ main{
     padding: 50px 0px;
     margin: 30px;
     border-radius: 15px;
+    box-shadow: 3px 3px rgb(183, 173, 186);
 }
 
 .card:first-child{
@@ -222,7 +223,7 @@ footer{
     height: 100%;
     width: 100%;
     justify-self: center;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     border-style: groove none none none;
     font-weight: bold;
     display: grid;
@@ -236,6 +237,10 @@ footer{
     "seguinos"
     "c-3"
     ;
+    margin: 0;
+    padding: 10px;
+    color: rgb(100,100,100);
+    
 }
 .c-1{
     grid-area: c-1;
@@ -277,13 +282,6 @@ footer p{
     align-items: center;
 }
 
-/* .contacto .phone .seguinos a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
 .phone {
     grid-area: phone;
     display: flex;
@@ -307,16 +305,24 @@ footer p{
     font-size: 0.5em;
 }
 
+/* ------------ nosotros.html----------------- */
 #box-container1{
     background-color: rgb(90, 37, 104);
     color: white;
     text-align: center;
     justify-content:space-between;
     margin-top: 0;
+    height: auto;
 }
 .about{
-    margin-top: 10px;
-    font-size: 2em;
+    margin-top: 0px;
+    font-size: 2.5em;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.432);
+}
+.nosotros h3{
+    font-size: 1.5;
+    color: rgba(175, 123, 162, 0.77);
+    text-shadow: 4px 4px rgb(54, 30, 54);
 }
 .nosotros p{
     margin-left: 10px;
@@ -368,8 +374,8 @@ footer p{
         font-size: 1.5em;
     }
 
-    .box-container h2{
-        font-size: 1.5em;
+    #box-container h2{
+        font-size: 2.5em;
     }
     .card button{
         margin-top: 50px;
@@ -395,7 +401,51 @@ footer .contenedor-form{
     "contacto phone seguinos"
     ;
     }
+
+    .container1{ 
+        background-color: rgb(90, 37, 104); 
+        margin-top: 50px;
+        padding: 10px;
+        
+    }
+
+    .nosotros{
+        display: flex;
+        
+    }
+
+    .about{
+        margin-top: 50px;
+        font-size: 1.7em;
+        text-shadow: 4px 4px rgba(0, 0, 0, 0.432);
+        padding: 10px;
+    }
+    
+    .nosotros h3{
+        font-size: 1.3em;
+        color: rgba(175, 123, 162, 0.77);
+        text-shadow: 4px 4px rgb(54, 30, 54);
+        height: auto;
+        margin-top: 170px;
+        gap: 20px;
+    }
+    .nosotros p{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        font-size: 0.9em;
+        text-align:justify;  
+        text-justify:auto;
+    }
+    footer{
+        margin: 0;
+        padding: 10px;
+        color: rgb(100,100,100);
+    }
+
 }
+
+
 @media (min-width: 1024px){
     .navbar-menu{
         font-family: 'Noto Serif Hebrew', serif;
@@ -416,7 +466,7 @@ footer .contenedor-form{
     #box-container .card{
         padding: 50px;
         background-size: 100% 100%;
-        box-shadow: 2px 2px rgb(199, 101, 232);
+        box-shadow: 3px 3px rgb(183, 173, 186);
         
     }
 
@@ -445,10 +495,39 @@ footer .contenedor-form{
             rgba(0,0,0,0.5)
         )
         ,url("../asset/img/contactenos.png");
-
     }
 
+    .container1{ 
+        background-color: rgb(90, 37, 104); 
+        margin-top: 50px;
+        padding: 10px;
+        
+    }
+
+    .about{
+        margin-top: 50px;
+        font-size: 3em;
+        text-shadow: 4px 4px rgba(0, 0, 0, 0.432);
+        padding: 10px;
+    }
+    
+    .nosotros h3{
+        font-size: 2.2em;
+        color: rgba(175, 123, 162, 0.77);
+        text-shadow: 4px 4px rgb(54, 30, 54);
+        height: auto;
+    }
+    .nosotros p{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        font-size: 1.2em;
+        text-align:justify;  
+        text-justify:auto;
+    }
 }
+
+
 @media (min-width: 1440px){
     header .container{
         position:fixed;
@@ -465,4 +544,41 @@ footer .contenedor-form{
         font-size: 4em;
         margin-bottom: 50px;
     }
+    .container1{ 
+        background-color: rgb(90, 37, 104); 
+        margin-top: 50px;
+        padding: 10px;
+        
+    }
+
+    .about{
+        margin-top: 50px;
+        font-size: 4.5em;
+        text-shadow: 4px 4px rgba(0, 0, 0, 0.432);
+        padding: 10px;
+    }
+    
+    .nosotros h3{
+        font-size: 3em;
+        color: rgba(175, 123, 162, 0.77);
+        text-shadow: 4px 4px rgb(54, 30, 54);
+        height: auto;
+    }
+    .nosotros p{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        font-size: 2em;
+        text-align:justify;  
+        text-justify:auto;
+    }
+    footer p{
+        margin: 0;
+        padding: 10px;
+        font-size: 1.5em;
+        color: rgb(100,100,100);
+    }
+    .derechos p{
+        font-size: 1em;
+        }
 }
