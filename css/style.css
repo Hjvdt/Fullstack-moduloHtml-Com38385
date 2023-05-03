@@ -335,9 +335,72 @@ footer p{
     padding: 10px 10px;
 }
 
+/* ---------------- resultados.html con bootstrap-------------- */
+.busqueda{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(90, 37, 104);
+    color: white;
+    text-align: center;
+    justify-content:space-between;
+}
+.busqueda h1{
+    padding-top: 150px;
+    padding-bottom: 20px;
+    color: white;
+    text-shadow: 3px 3px rgba(149, 146, 146, 0.933);
+}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
 
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
 
+form.example button:hover {
+    background: #0b7dda;
+}
 
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* ------------- contacto bootstrap ----------- */
+
+.text-center-header{
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.container2{
+    padding: 20px;
+    justify-content: center;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
 
 
 
