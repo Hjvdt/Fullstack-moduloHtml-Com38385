@@ -44,7 +44,7 @@ button:hover{
     background-color: rgba(161, 15, 132, 0.491);
 }
 
-.container{
+.contenedor{
     max-width: 1400px;
     margin: auto;
 }
@@ -66,7 +66,7 @@ header .logo{
     font-size: 1.6em;
 }
 
-header .container{
+header .contenedor{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,7 +137,7 @@ main{
     text-align: center;
 }
 
-#box-container .container{
+#box-container .contenedor{
     padding: 50px 12px;
 }
 
@@ -331,13 +331,13 @@ footer p{
     text-align:justify;  
     text-justify:auto;
 }
-#box-container1 .container{
+#box-container1 .contenedor{
     padding: 10px 10px;
 }
 
 /* -------------------- turnos.html---------------- */
 
-.container-turno{
+.contenedor-turno{
     height: 200vh;
     width: 100vw;
 }
@@ -459,10 +459,10 @@ form.example::after {
     margin-top: 70px;
 }
 
-.container2{
+/* .container2{
     padding: 20px;
     justify-content: center;
-}
+} */
 
 .bigicon {
     font-size: 35px;
@@ -487,7 +487,7 @@ form.example::after {
         width: 100%;
     }
 
-    header .container{
+    header .contenedor{
         flex-direction: row;
         justify-content: space-between;
     }
@@ -589,7 +589,7 @@ footer .contenedor-form{
     text-shadow: 6px 6px rgb(54, 30, 54);
 }
 
-.container-turno{
+.contenedor-turno{
     height: 250vh;
     width: 100vw;
     padding-top: 100px;
@@ -713,7 +713,7 @@ iframe{
 
 
 @media (min-width: 1440px){
-    header .container{
+    header .contenedor{
         position:fixed;
         max-width: 2560px;
         width: 100%;
