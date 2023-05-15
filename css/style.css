@@ -54,10 +54,12 @@ button:hover{
 /* --------------------------- Header ------------------- */
 header{
     grid-area: header;
-    background-color: rgb(245,245,245);
+    background-color: rgb(200, 170, 229);
     
 }
-
+header .navbar .container-fluid{
+    background-color: rgb(165, 130, 197);
+}
 header .logo{
     margin: 0;
     padding: 25px 30px;
