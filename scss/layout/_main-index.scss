@@ -1,0 +1,112 @@
+main{
+    grid-area: main;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,$bg-index;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    & h1{
+    color: white;
+    font-size: $letra-10;
+    text-shadow: 4px 4px $color-boton-hover;
+    }
+    & h2{
+        color: $color-letra-h2;
+        font-size: $letra-2;
+    }
+    & button{
+        font-size: $letra-4;
+        margin-top: 50px;
+    }
+}
+#box-container{
+    background-color: rgb(30, 81, 139);
+    color: white;
+    text-align: center;
+    .contenedor{
+        padding: 50px 12px;
+        h2{
+            margin-top: 0;
+            font-size: 3.2em;
+        }
+        p{
+            display: none;
+        }
+    }
+    .card{
+        background-position: center center;
+        background-size: cover;
+        padding: 50px 0px;
+        margin: 30px;
+        border-radius: 15px;
+        box-shadow: 3px 3px rgb(183, 173, 186);
+        &:first-child{
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            )
+            ,url("../asset/img/turnos.jpg");
+        
+        }
+        &d:nth-child(2){
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            )
+            ,url("../asset/img/resultados.png");
+        }
+        &:nth-child(3){
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            )
+            ,url("../asset/img/contactenos.png");
+        
+        }
+    }
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../asset/img/sedes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#final h2{
+    font-size: 12vw;
+}
+
+#final button{
+    font-size: 5vw;
+    margin-top: 20px;
+}

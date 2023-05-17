@@ -1,770 +1,163 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-html{
-    scroll-behavior: smooth;
-}
-/* ----------------- Generales --------------- */
-body{
-    font-family: 'Noto Serif Hebrew', serif;
-    margin: 0;
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: 100;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer"
-    ;
-}
+html {
+  scroll-behavior: smooth;
+  font-family: 'Noto Serif Hebrew', serif; }
 
-h1{ font-size: 3.5em;}
-h2{ font-size: 2.7em;}
-h3{ font-size: 2em;}
-p{ font-size: 1.25em;}
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: blueviolet; }
 
+button:hover {
+  background-color: rgba(161, 15, 132, 0.491); }
 
-button{
-    font-size: 1.25em;
-    font-weight: bold;
-    padding: 10px 30px;
-    border-radius: 10px;
-    border: 2px solid rgba(0,0,0,0.3);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: white;
-    background-color: blueviolet;
-}
+body {
+  font-family: 'Noto Serif Hebrew', serif;
+  margin: 0;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 100;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer"; }
 
-button:hover{
-    background-color: rgba(161, 15, 132, 0.491);
-}
+#hero {
+  background-image: url("../asset/img/fondoTubos.jpg"); }
 
-.contenedor{
-    max-width: 1400px;
-    margin: auto;
-}
-
-.color-acento{ color:blueviolet; }
-
-/* --------------------------- Header ------------------- */
-header{
-    grid-area: header;
-    background-color: rgb(200, 170, 229);
-    
-}
-header .navbar .container-fluid{
-    background-color: rgb(165, 130, 197);
-}
-header .logo{
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    color: blueviolet;
-    font-size: 1.6em;
-}
-
-header .contenedor{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(200, 170, 229);
-}
-
-header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
-}
-
-header a{
+header {
+  grid-area: header; }
+  header .navbar .container-fluid {
+    background-color: #a583c5; }
+  header .navbar a {
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
     color: black;
-}
+    font-size: 1.5em; }
+    header .navbar a:hover {
+      color: rgba(161, 15, 132, 0.491); }
 
-header a:hover{
-    color: rgba(194, 25, 109, 0.775);
-}
+main {
+  grid-area: main; }
 
-/* ------------------------ Main ------------------ */
-main{
-    grid-area: main;
-}
-
-#hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("../asset/img/fondoTubos.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-#hero h1{
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img/fondoTubos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  #hero h1 {
     color: white;
-    font-size: 2.5em;
-    text-shadow: 4px 4px rgb(50, 29, 54);
-}
+    font-size: 3em;
+    text-shadow: 4px 4px rgba(161, 15, 132, 0.491); }
+  #hero h2 {
+    color: #f6d2f7;
+    font-size: 1em; }
+  #hero button {
+    font-size: 1.5em;
+    margin-top: 50px; }
 
-#hero h2{
-    color: rgb(246, 210, 247);
-    font-size: 1.0em;
-}
+#box-container {
+  background-color: #1e518b;
+  color: white;
+  text-align: center; }
 
-#hero button{
-    font-size: 1.75em;
-    margin-top: 50px;
-}
+#box-container .contenedor {
+  padding: 50px 12px; }
 
+#box-container h2 {
+  margin-top: 0;
+  font-size: 3.2em; }
 
-#box-container{
-    background-color: rgb(30, 81, 139);
-    color: white;
-    text-align: center;
-}
+#box-container p {
+  display: none; }
 
-#box-container .contenedor{
-    padding: 50px 12px;
-}
+#box-container .card {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+  box-shadow: 3px 3px #b7adba; }
 
-#box-container h2{
-    margin-top: 0;
-    font-size: 3.2em;
-}
+.card:first-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img/turnos.jpg"); }
 
-#box-container p{
-    display: none;
-}
+.card:nth-child(2) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img/resultados.png"); }
 
-#box-container .card{
-    background-position: center center;
-    background-size: cover;
-    padding: 50px 0px;
-    margin: 30px;
-    border-radius: 15px;
-    box-shadow: 3px 3px rgb(183, 173, 186);
-}
+.card:nth-child(3) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img/contactenos.png"); }
 
-.card:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("../asset/img/turnos.jpg");
+#final {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #1e1e1e;
+  color: white;
+  height: 80vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img/sedes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
 
-}
+#final h2 {
+  font-size: 12vw; }
 
-.card:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("../asset/img/resultados.png");
-}
+#final button {
+  font-size: 5vw;
+  margin-top: 20px; }
 
-.card:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("../asset/img/contactenos.png");
-
-}
-
-#final{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(30,30,30);
-    color: white;
-    height: 80vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("../asset/img/sedes.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-#final h2{
-    font-size: 12vw;
-}
-
-#final button{
-    font-size: 5vw;
-    margin-top: 20px;
-}
-/* -------------------- Footer ------------------------- */
-footer{
-    grid-area: footer;
-    background-color: rgb(230,230,230);
-    height: 100%;
-    width: 100%;
-    justify-self: center;
-    /* margin-top: 10px; */
-    border-style: groove none none none;
-    font-weight: bold;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-    "contacto"
-    "c-1"
-    "phone"
-    "c-2" 
-    "seguinos"
-    "c-3"
-    ;
-    margin: 0;
-    padding: 10px;
-    color: rgb(100,100,100);
-    
-}
-.c-1{
-    grid-area: c-1;
-}
-.c-2{
-    grid-area: c-2;
-}
-.c-3{
-    grid-area: c-3;
-}
-footer p{
+footer {
+  grid-area: footer;
+  background-color: #e6e6e6;
+  height: 100%;
+  width: 100%;
+  justify-self: center;
+  border-style: groove none none none;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "contacto phone seguinos";
+  margin: 0;
+  padding: 10px;
+  color: #646464; }
+  footer .container-contacto p {
     margin: 0;
     padding: 10px;
     font-size: 1em;
-    color: rgb(100,100,100);
-}
-
-.container-contacto{
+    color: #646464; }
+  footer .container-contacto .contenedor-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
+    justify-content: space-between;
     height: auto;
     width: 100%;
-    background-color: rgb(221, 219, 219);
-    border-radius: 10px;
-}
-
-.contenedor-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contacto {
-    grid-area: contacto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.phone {
-    grid-area: phone;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.seguinos {
-    grid-area: seguinos;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.derechos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.derechos p{
-    font-size: 0.5em;
-}
-
-/* ------------ nosotros.html----------------- */
-#box-container1{
-    background-color: rgb(90, 37, 104);
-    color: white;
-    text-align: center;
-    /* justify-content:center; */
-    margin-top: 0;
-    height: 100%;
-}
-.about{
-    margin-top: 0px;
-    font-size: 2.5em;
-    text-shadow: 4px 4px rgba(0, 0, 0, 0.432);
-}
-.nosotros h3{
-    font-size: 1.5;
-    color: rgba(175, 123, 162, 0.77);
-    text-shadow: 4px 4px rgb(54, 30, 54);
-}
-.nosotros p{
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 0.5em;
-    text-align:justify;  
-    text-justify:auto;
-}
-#box-container1 .contenedor{
-    padding: 10px 10px;
-}
-
-/* -------------------- turnos.html---------------- */
-
-.contenedor-turno{
-    height: 200vh;
-    width: 100vw;
-}
-.imgturnos{
-    text-align: center;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("../asset/img/turnos.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center center;
-}
-
-.banner-turnos{ 
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    color: white;
-    font-size: 0.7em;
-}
-
-.banner-turnos h1{
-    text-shadow: 4px 4px rgb(121, 7, 121);
-}
-
-.banner-turnos p{
-    font-size: 1.5em;
-    text-align:justify;  
-    text-justify:auto;
-}
-
-iframe{
-    width: 40vh;
-    height: 40vh;
-}
-
-.example-turno{
-    margin-top: 100px;
-    margin-bottom: 150px;
-}
-
-.busqueda-ind h1{
-    font-size: 1.5em;
-    padding: 20px;
-    color: white;
-    text-shadow: 4px 4px rgb(54, 30, 54);
-}
-
-.busqueda-ind p{
-    padding: 20px;
-    font-size:1.5em;
-    color: white;
-    text-align:justify;  
-    text-justify:auto;
-}
-.example-turno{
-    padding-bottom: 50px;
-}
-
-
-
-/* ---------------- resultados.html con bootstrap-------------- */
-.busqueda{
-    margin: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(90, 37, 104);
-    color: white;
-    text-align: center;
-    justify-content:space-between;
-}
-.busqueda h1{
-    padding-top: 150px;
-    padding-bottom: 20px;
-    color: white;
-    text-shadow: 3px 3px rgba(149, 146, 146, 0.933);
-}
-form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
-}
-
-form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;
-}
-
-form.example button:hover {
-    background: #0b7dda;
-}
-
-
-form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* ------------- contacto bootstrap ----------- */
-
-.text-center-header{
-    color: #36A0FF;
-    font-size: 27px;
-    padding: 10px;
-    margin-top: 70px;
-}
-
-/* .container2{
-    padding: 20px;
-    justify-content: center;
-} */
-
-.bigicon {
-    font-size: 35px;
-    color: #36A0FF;
-}
-
-
-/* ----------------- Ingreso con bootstrap ---------- */
-.container-fluid{
-    background-color: rgba(121, 108, 8, 0.285);
-}
-.ingresar h1{
-    font-size: 2em;
-    justify-content: center;
-
-}
-
-/* --------------- Resonsive ----------------- */
-@media (min-width: 768px){
-    header{
-        position: fixed;
-        width: 100%;
-    }
-
-    header .contenedor{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 50px;
-        justify-self:end;
-        justify-content: space-between;
-    }
-
-    #hero h1{
-        font-size: 3em;
-        margin-top: 120px;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px rgb(138, 58, 151);
-    }
-
-    #hero h2{
-        font-size: 1.5em;
-    }
-
-    #box-container h2{
-        font-size: 2.5em;
-    }
-    .card button{
-        margin-top: 50px;
-    }
-
-    #final h2{
-        font-size: 3em;
-        margin-bottom: 50px;
-    }
-
-    #final button{
-        font-size: 1.5em;
-    }
-
-footer .contenedor-form{
-    justify-self: center;
-    justify-content: space-between;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-right: 50px;
-    grid-row: auto;
-    grid-template-areas:
-    "contacto phone seguinos"
-    ;
-    }
-
-    .container1{ 
-        background-color: rgb(90, 37, 104); 
-        margin-top: 50px;
-        padding: 10px;
-        
-    }
-
-    .nosotros{
-        display: flex;
-        
-    }
-
-    .about{
-        margin-top: 50px;
-        font-size: 1.7em;
-        text-shadow: 4px 4px rgba(0, 0, 0, 0.432);
-        padding: 10px;
-    }
-    
-    .nosotros h3{
-        font-size: 1.3em;
-        color: rgba(175, 123, 162, 0.77);
-        text-shadow: 4px 4px rgb(54, 30, 54);
-        height: auto;
-        margin-top: 170px;
-        gap: 20px;
-    }
-    .nosotros p{
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 0px;
-        font-size: 0.9em;
-        text-align:justify;  
-        text-justify:auto;
-    }
-    footer{
-        margin: 0;
-        padding: 10px;
-        color: rgb(100,100,100);
-    }
-
-}
-
-.banner-turnos h1{
-    font-size: 4em;
-    padding: 20px;
-    color: white;
-    text-shadow: 6px 6px rgb(54, 30, 54);
-}
-
-.contenedor-turno{
-    height: 250vh;
-    width: 100vw;
-    padding-top: 100px;
-}
-
-iframe{
-    width: 60vw;
-    height: 60vh;
-}
-.example-turno{
-    width: 100vw;
-    height: 30vh
-}
-.busqueda-ind{
-    margin-bottom: 200px;
-}
-.busqueda-ind h1{
-    border-style: solid;
-    border-color: rgb(54, 30, 54);
-    background-color:rgba(133, 61, 133, 0.281) ;
-    font-size: 2.5em;
-    padding: 20px;
-    color: white;
-    text-shadow: 4px 4px rgb(54, 30, 54);
-}
-
-.busqueda-ind p{
-    padding: 20px;
-    /* font-size: 2em; */
-    color: white;
-    text-align:justify;  
-    text-justify:auto;
-}
-
-
-
-
-@media (min-width: 1024px){
-    .navbar-menu{
-        font-family: 'Noto Serif Hebrew', serif;
-        font-size: 3vh;
-    }
-
-    #box-container .box{
-        display: flex;
-        justify-content: center;
-    }
-
-    #box-container p{
-        display: block;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    #box-container .card{
-        padding: 50px;
-        background-size: 100% 100%;
-        box-shadow: 3px 3px rgb(183, 173, 186);
-        
-    }
-
-    .card:first-child{
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("../asset/img/turnos.jpg");
-    }
-
-    .card:nth-child(2){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("../asset/img/resultados.png");
-    }
-
-    .card:nth-child(3){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("../asset/img/contactenos.png");
-    }
-
-    .container1{ 
-        background-color: rgb(90, 37, 104); 
-        margin-top: 50px;
-        padding: 10px;
-        
-    }
-
-    .about{
-        margin-top: 50px;
-        font-size: 3em;
-        text-shadow: 4px 4px rgba(0, 0, 0, 0.432);
-        padding: 10px;
-    }
-    
-    #box-conteiner1{
-        max-height: 100%;
-    }
-    .nosotros h3{
-        font-size: 2.2em;
-        color: rgba(175, 123, 162, 0.77);
-        text-shadow: 4px 4px rgb(54, 30, 54);
-        height: auto;
-    }
-    .nosotros p{
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 0px;
-        font-size: 1.2em;
-        text-align:justify;  
-        text-justify:auto;
-    }
-}
-
-
-@media (min-width: 1440px){
-    header .contenedor{
-        position:fixed;
-        max-width: 2560px;
-        width: 100%;
-    }
-    #hero h1{
-        font-size: 5em;
-        margin-top: 120px;
-        margin-bottom: 20px;
-        text-shadow: 4px 4px rgb(138, 58, 151);
-    }
-    #final h2{
-        font-size: 4em;
-        margin-bottom: 50px;
-    }
-    .container1{ 
-        background-color: rgb(90, 37, 104); 
-        margin-top: 50px;
-        padding: 10px;
-        
-    }
-
-    .about{
-        margin-top: 50px;
-        font-size: 4.5em;
-        text-shadow: 4px 4px rgba(0, 0, 0, 0.432);
-        padding: 10px;
-    }
-    
-    .nosotros h3{
-        font-size: 3em;
-        color: rgba(175, 123, 162, 0.77);
-        text-shadow: 4px 4px rgb(54, 30, 54);
-        height: auto;
-    }
-    .nosotros p{
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 0px;
-        font-size: 2em;
-        text-align:justify;  
-        text-justify:auto;
-    }
-    footer p{
-        margin: 0;
-        padding: 10px;
-        font-size: 1.5em;
-        color: rgb(100,100,100);
-    }
-    .derechos p{
-        font-size: 1em;
-        }
-}
+    background-color: #dddbdb;
+    border-radius: 10px; }
+    footer .container-contacto .contenedor-form .contacto {
+      grid-area: contacto; }
+    footer .container-contacto .contenedor-form .phone {
+      grid-area: phone; }
+    footer .container-contacto .contenedor-form .seguinos {
+      grid-area: seguinos; }
+    footer .container-contacto .contenedor-form .derechos {
+      font-size: 0.5em; }

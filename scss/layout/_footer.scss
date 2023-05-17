@@ -1,0 +1,51 @@
+footer{
+    grid-area: footer;
+    background-color:$background-footer;
+    height: 100%;
+    width: 100%;
+    justify-self: center;
+    border-style: groove none none none;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "contacto phone seguinos"
+    ;
+    margin: 0;
+    padding: 10px;
+    color:$color-footer;
+    .container-contacto{
+        p{
+            margin: 0;
+            padding: 10px;
+            font-size: $letra-2;
+            color:$color-footer;
+        }
+        .contenedor-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:space-between;
+            height: auto;
+            width: 100%;
+            background-color:$background-container-contacto;
+            border-radius: 10px;
+            .contacto {
+                grid-area: contacto;
+                
+            }
+            .phone {
+                grid-area: phone;
+                
+            }
+            .seguinos {
+                grid-area: seguinos;
+                
+            }
+            .derechos {
+                font-size: $letra-1;
+            }
+        }
+    }
+}
