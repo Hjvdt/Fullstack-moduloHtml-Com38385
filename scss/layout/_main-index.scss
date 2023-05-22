@@ -124,21 +124,22 @@ main{
     margin-top: 0;
     height: 100%;
     h1{
-        font-size: 2.5em;
+        font-size: $letra-7;
         text-shadow: 4px 4px rgba(0, 0, 0, 0.432);
     }
     .nosotros{ 
         h3{
-            font-size: 1.5;
-            color: $color-letra-h3;
+            font-size: $letra-5;
+            color: $color-text-w;
             text-shadow: 4px 4px $border-busqueda-h1;
+            padding-top: 10px;
         }
         p{
             margin-left: 10px;
             margin-right: 10px;
             font-size: 0.5em;
-            text-align:justify;  
-            text-justify:auto;
+            text-align: justify;  
+            text-justify: auto;
         }
     }
 }
@@ -171,6 +172,57 @@ main{
     }
 }
 
+.contenedor-turno{
+    height: auto;
+    
+    .imgturnos{
+        text-align: center;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,$card-turnos;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        .banner-turnos{ 
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+            color: white;
+            font-size: 0.7em;
+            h1{
+                text-shadow: 4px 4px rgb(121, 7, 121);
+            }
+            p{
+                font-size: 1.0em;
+                text-align: justify;  
+                text-justify: auto;
+            }
+        }
+        .busqueda-ind{ 
+            h1{
+            font-size: 2.5em;
+            padding: 20px;
+            color: white;
+            text-shadow: 4px 4px rgb(54, 30, 54);
+            }
+            p{
+                padding: 20px;
+                font-size: 1em;
+                color: white;
+                text-align:justify;  
+                text-justify:auto;
+            }
+            .example-turno{
+                padding-bottom: 50px;
+            }
+        }
+    }
+}
+
+
 .ingreso{
     .container-fluid{
         background-image: linear-gradient(
@@ -184,24 +236,43 @@ main{
         background-position: center center;
         .ingresar h1{
             color: $color-c;
-            font-size: $letra-10;
+            font-size: $letra-7;
+            font-weight: bold;
             justify-content: center;
+        }
+        .container-contacto{
+            .form-label{
+                color: white;
+                font-weight: bold;
+                text-shadow: 2px 2px rgb(143, 85, 129);
+
+            }
         }
     }
 }
-
-.busqueda{
-    margin: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(90, 37, 104);
-    color: white;
-    text-align: center;
-    justify-content:space-between;
-    h1{
-        padding-top: 150px;
-        padding-bottom: 20px;
-        color: white;
-        text-shadow: 3px 3px rgba(149, 146, 146, 0.933);
+main{
+    .busqueda{
+        margin: 0;
+        height: auto;
+        width: auto;
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+        ,$card-resultados;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        // background-color: rgb(90, 37, 104);
+        // color: white;
+        // text-align: center;
+        // justify-content:space-between;
+        h1{
+            padding-top: 150px;
+            padding-bottom: 20px;
+            color: white;
+            text-shadow: 3px 3px rgba(149, 146, 146, 0.933);
+        }
     }
 }

@@ -1,24 +1,38 @@
-@media (min-width: 1440px){
-    header{
-        display: flex;
-        // flex-direction: row-reverse;
-        color:$color-text-b;
-        font-size: $letra-6;
-            &:hover{
-            color: $color-boton-hover;
-            }
-            .navbar-nav{
-                display: flex;
-                flex-direction: row;
-                float: right;
-                justify-content: flex-end;
-            }        
+@media screen and (min-width: 1440px){
+    #hero{
+        font-size: 2em;
     }
-    
-    main{
-        #hero{
-            h1{
-                font-size: $letra-14;
+    #final{
+        font-size: 2em;
+        text-shadow: 3px 2px $color-boton;
+    }
+    .contenedor-turno{
+        .imgturnos{
+            align-items: center;
+            .banner-turnos{
+                h1{
+                    font-size: 4.5em;
+                }
+                p{
+                    font-size: 3.0em;
+                    text-align: justify;  
+                    text-justify: auto;;
+                }
+            }
+            iframe{
+                width: 500px;
+                height: 400px;
+            }
+            .busqueda-ind{
+                h1{
+                    font-size: 4.5em;
+                    text-shadow: 3px 2px $color-boton;
+                }
+                p{
+                    font-size: 2.5em;
+                    text-align: justify;  
+                    text-justify: auto;;
+                }
             }
         }
     }

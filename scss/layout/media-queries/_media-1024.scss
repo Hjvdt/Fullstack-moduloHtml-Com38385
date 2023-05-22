@@ -1,0 +1,61 @@
+@media screen and (min-width: 1024px){
+    .navbar-nav{
+        font-size: 2em;
+        
+    }
+    #box-container1{
+        h1{
+            font-size: $letra-13;
+            text-shadow: 4px 4px rgba(0, 0, 0, 0.432);
+            padding-top: 10px;
+        }
+        .nosotros{ 
+            img{
+                width: 500px;
+                height: 400px;
+            }
+            h3{
+                font-size: $letra-10;
+                color: $color-text-w;
+                text-shadow: 4px 4px $border-busqueda-h1;
+                padding-top: 10px;
+            }
+            p{
+                font-size: $letra-3;
+                margin-left: 10px;
+                margin-right: 10px;
+                text-align: justify;  
+                text-justify: auto; 
+                
+            }
+        }
+    }
+    .imgturnos{
+        align-items: center;
+        .banner-turnos{
+            h1{
+                font-size: $letra-12;
+            }
+            p{
+                font-size: 4.0em;
+                text-align: justify;  
+                text-justify: auto;;
+            }
+        }
+        iframe{
+            width: 300px;
+            height: 200px;
+        }
+    }
+    .ingreso{
+        .container-fluid{
+            height: auto;
+        }
+    }
+
+    footer{
+        .seguinos{
+            padding-right: 40px;
+        }
+    }
+}

@@ -4,7 +4,6 @@ footer{
     height: 5px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-area: footer;
     background-color: $color-footer;
     
     .contacto{
@@ -13,6 +12,7 @@ footer{
         p{
             font-size: $letra-2;
             font-weight: 600;
+            padding-left: 10px;
         }
         ul{
             li{
@@ -37,13 +37,13 @@ footer{
             font-weight: 600;
             display: flex;
             flex-direction: row-reverse;
-            padding-right: 15px;
+            padding-right: 20px;
         }
         .seguinos{
             display: flex;
             flex-direction: row-reverse;
             align-items: center;
-            padding-right: 20px;
+            padding-right: 40px;
             ul{
                 li{
                     text-decoration: none;

@@ -60,7 +60,6 @@ Todo aplicado por medio de @import sobre el archivo styles.scss el cual derivaba
 - Keywords: Palabras clave en \*\*META concerniente al tipo de rubro y uso de etiqueta strong sobre palabras o frases de mi Sitio Web para mejor posicionamiento.
 - Favicon: diseño del mismo para visualización sobre pestaña de Navegador.
 - Description: Descripción del sitio, el fin, que ofrecemos, etc..
-- Opengraph: Uso del mismo para generar una imágen de nuestro sitio para poder ser utilizada en redes sociales, whatsapp, etc cuando la compartimos. (trabajo en proceso)
 
 6. Github se realizó la creación del Repo:
 
@@ -74,4 +73,3 @@ Todo proceso realizado aquí, es de uso personal, educativo. Se utilizaron:
 - Iconos (Librerías): [Boxicons](http://https://boxicons.com "Boxicons")
 - Tipografía: [Google Fonts](https://fonts.google.com/ "Google Fonts")
 - Framework: [Bootstrap](https://getbootstrap.com/ "Bootstrap")
-  # END
