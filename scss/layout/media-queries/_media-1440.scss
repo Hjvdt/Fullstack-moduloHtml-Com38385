@@ -7,8 +7,14 @@
             &:hover{
             color: $color-boton-hover;
             }
-        
+            .navbar-nav{
+                display: flex;
+                flex-direction: row;
+                float: right;
+                justify-content: flex-end;
+            }        
     }
+    
     main{
         #hero{
             h1{
