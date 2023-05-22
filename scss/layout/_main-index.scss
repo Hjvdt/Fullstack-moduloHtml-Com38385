@@ -19,7 +19,7 @@ main{
     background-size: cover;
     background-position: center center;
     & h1{
-    color: white;
+    color: $color-text-w;
     font-size: $letra-10;
     text-shadow: 4px 4px $color-boton-hover;
     }
@@ -33,51 +33,59 @@ main{
     }
 }
 #box-container{
-    background-color: rgb(30, 81, 139);
-    color: white;
+    background-color:$background-container;
+    color:$color-text-w;
     text-align: center;
     .contenedor{
         padding: 50px 12px;
         h2{
             margin-top: 0;
-            font-size: 3.2em;
+            font-size: $letra-10;
+            text-shadow: 3px 3px $b-shadow;
+            font-style: italic;
         }
-        p{
-            display: none;
-        }
-    }
-    .card{
-        background-position: center center;
-        background-size: cover;
-        padding: 50px 0px;
-        margin: 30px;
-        border-radius: 15px;
-        box-shadow: 3px 3px rgb(183, 173, 186);
-        &:first-child{
-            background-image: linear-gradient(
-                0deg,
-                rgba(0,0,0,0.5),
-                rgba(0,0,0,0.5)
-            )
-            ,url("../asset/img/turnos.jpg");
-        
-        }
-        &d:nth-child(2){
-            background-image: linear-gradient(
-                0deg,
-                rgba(0,0,0,0.5),
-                rgba(0,0,0,0.5)
-            )
-            ,url("../asset/img/resultados.png");
-        }
-        &:nth-child(3){
-            background-image: linear-gradient(
-                0deg,
-                rgba(0,0,0,0.5),
-                rgba(0,0,0,0.5)
-            )
-            ,url("../asset/img/contactenos.png");
-        
+        .box{
+            h3{
+                font-size: $letra-6;
+                text-shadow: 3px 3px $b-shadow;
+            }
+            p{
+                display: none;
+            }
+            .card{
+                background-position: center center;
+                background-size: cover;
+                padding: 50px 0px;
+                margin: 30px;
+                border-radius: 15px;
+                box-shadow: 2px 2px $b-shadow;
+                font-weight: bold;
+                &:first-child{
+                    background-image: linear-gradient(
+                        0deg,
+                        rgba(0,0,0,0.5),
+                        rgba(0,0,0,0.5)
+                    )
+                    ,$card-turnos;
+                
+                }
+                &:nth-child(2){
+                    background-image: linear-gradient(
+                        0deg,
+                        rgba(0,0,0,0.5),
+                        rgba(0,0,0,0.5)
+                    )
+                    ,$card-resultados;
+                }
+                &:nth-child(3){
+                    background-image: linear-gradient(
+                        0deg,
+                        rgba(0,0,0,0.5),
+                        rgba(0,0,0,0.5)
+                    )
+                    ,$card-contacto;
+                }
+            }
         }
     }
 }
@@ -88,25 +96,112 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(30,30,30);
-    color: white;
+    background-color:$bg-b;
+    color: $color-text-w;
     height: 80vh;
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../asset/img/sedes.jpg");
+    ,$card-sedes;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    h2{
+        font-size: $letra-5;
+    }
+    button{
+        font-size: $letra-3;
+        margin-top: 20px;
+    }
 }
 
-#final h2{
-    font-size: 12vw;
+#box-container1{
+    background-color: $background-box-busqueda;
+    color: $color-text-w;
+    text-align: center;
+    margin-top: 0;
+    height: 100%;
+    h1{
+        font-size: 2.5em;
+        text-shadow: 4px 4px rgba(0, 0, 0, 0.432);
+    }
+    .nosotros{ 
+        h3{
+            font-size: 1.5;
+            color: $color-letra-h3;
+            text-shadow: 4px 4px $border-busqueda-h1;
+        }
+        p{
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 0.5em;
+            text-align:justify;  
+            text-justify:auto;
+        }
+    }
 }
 
-#final button{
-    font-size: 5vw;
-    margin-top: 20px;
+.bg-contacto{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,$bg-contact;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .form-horizontal{
+        legend{
+            color: $color-c;
+            font-size: $letra-10;
+            text-shadow: 4px 4px rgba(0, 0, 0, 0.432);
+            padding: 10px;
+            margin-top: 70px;
+        }
+        .form-group{
+            align-items: center;
+            .bigicon {
+                font-size: 35px;
+                color: $color-c;
+            }
+        }
+    }
+}
+
+.ingreso{
+    .container-fluid{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+        ,$bg-index;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        .ingresar h1{
+            color: $color-c;
+            font-size: $letra-10;
+            justify-content: center;
+        }
+    }
+}
+
+.busqueda{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(90, 37, 104);
+    color: white;
+    text-align: center;
+    justify-content:space-between;
+    h1{
+        padding-top: 150px;
+        padding-bottom: 20px;
+        color: white;
+        text-shadow: 3px 3px rgba(149, 146, 146, 0.933);
+    }
 }

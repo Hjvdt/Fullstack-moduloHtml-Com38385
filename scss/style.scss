@@ -2,9 +2,11 @@
 
 @import "./base/reset";
 @import "./base/base";
+@import "./base/typo";
 
 @import "./components/botones";
 
+@import "./layout/media-queries/media-1440";
 @import "./layout/body";
 @import "./layout/header";
 @import "./layout/main-index";

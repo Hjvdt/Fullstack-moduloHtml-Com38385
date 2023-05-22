@@ -4,64 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Turnos - Segunda Preentrga</title>
+    <title>Resultados-Sistema de Turnos</title>
     <link rel="icon" type="image/x-icon" href='./asset/img/favicon.ico.png' />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Alice&family=Dongle:wght@300&family=Noto+Serif+Hebrew:wght@500&family=Noto+Serif+KR:wght@700&display=swap');
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <div class="contenedor">
-            <a  href="../index.html"><img src="../asset/img/Logo.png" alt="logo"></a>
-            <nav class="navbar">
-                <a class="navbar-menu" href="../index.html">Inicio</a></li>
-                <a class="navbar-menu" href="../pages/nosotros.html">Nosotros</a>
-                <a class="navbar-menu" href="../pages/turnos.html">Turnos</a>
-                <a class="navbar-menu" href="../pages/resultados.html">Resultados</a>
-                <a class="navbar-menu" href="../pages/ingreso.html">Ingreso</a>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../asset/img/Logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"style="width:20px;height:20px></span> -->
+                <span class="navbar-toggler-icon"style="width:20px;height:20px">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/tlyvkjxa.json"
+                        trigger="hover"
+                        colors="primary:#c71f16,secondary:#b4b4b4"
+                        style="width:50px;height:50px">
+                    </lord-icon>
+                </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="../pages/turnos.html">Turnos</a>
+                        <a class="nav-link" href="../pages/ingreso.html">Ingreso</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
-        <main>
-            <section class="busqueda">
-                <h1>Resultados</h1>
-                <p>Ingrese el Nro. de documento o el Nro. de Protocolo</p>
-                <form class="example" action="">
-                    <input type="text" placeholder="Buscar" name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-                <img src="../asset/img/resultados.png" alt="">
+    <main>
+        <section class="busqueda">
+            <h1>Resultados</h1>
+            <p>Ingrese el Nro. de documento o el Nro. de Protocolo</p>
+            <form class="example" action="">
+                <input type="text" placeholder="Buscar" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <img src="../asset/img/resultados.png" alt="">
+        </section>
+    </main>
+    <footer>
+        <div classs="grid-container">
+            <section class="contacto">
+                <p>Contacto</p>
+                <ul>
+                    <li a href="https://www.gmail.com/" target="_blank"><img src="../asset/img/email.png"width="30" height="30" alt="Email"></a></li>
+                    <li a href="https://wa.me/" target="_blank"><img src="../asset/img/whatsapp.png" width="30" height="30" alt="whatsapp"></a></li>
+                    <li a href=""><img src="../asset/img/telefono.png" width="30" height="30" alt="Phone"><strong>(011) 555-5555</strong></a></li>        
+                </ul>
             </section>
-        </main>
-        <footer>
-            <section class="container-contacto">
-                <div class="contenedor-form">
-                    <div class="contacto">
-                        <p>Contacto</p>
-                        <a class="c-1" href="https://www.gmail.com/" target="_blank"><img src="../asset/img/email.png" alt="Email"></a>
-                        <a class="c-1" href="https://wa.me/" target="_blank"><img src="../asset/img/whatsapp.png" alt="whatsapp"></a>
-                    </div>
-                    <div class="phone">
-                        <p>Teléfono </p><img class="c-2" src="../asset/img/telefono.png" alt="Phone"><strong>(011) 555-5555</strong>
-                    </div>
-                    <div class="seguinos">
-                        <p>Síguenos</p>
-                        <a class="c-3" href="https://www.linkedin.com/" target="_blank"><img src="../asset/img/linkedin.png" alt="Lnkedin"></a>
-                        <a class="c-3" href="https://www.instagram.com/" target="_blank"><img src="../asset/img/instagram.png" alt="Instagram"></a>
-                        <a class="c-3" href="https://www.facebook.com/" target="_blank"><img src="../asset/img/face.png" alt="Facebook"></a>
-                    </div>
-                </div>
-                <div class="derechos">
-                    <p>© 2023 Hjvdt - Todos los derechos reservados.</p>
+            <section class="redes">
+                <p>Síguenos</p>
+                <div class="seguinos">
+                    <ul>
+                        <li a href="https://www.linkedin.com/" target="_blank"><img src="../asset/img/linkedin.png"  width="30" height="30" alt="Lnkedin"></a></li>
+                        <li a href="https://www.instagram.com/" target="_blank"><img src="../asset/img/instagram.png"  width="30" height="30" alt="Instagram"></a></li>
+                        <li a href="https://www.facebook.com/" target="_blank"><img src="../asset/img/face.png"  width="30" height="30" alt="Facebook"></a></li>
                 </div>
             </section>
-        </footer>
-    </body>
+            <div class="derechos">
+                <p>© 2023 Hjvdt - Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
 </html> 

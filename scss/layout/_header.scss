@@ -1,19 +1,21 @@
 header{
     grid-area: header;
-    
+    background-color: $color-header;
     .navbar{  
-        .container-fluid{
-        background-color: $color-header;
-        }
-        
-        a{
-            padding: 5px 12px;
-            text-decoration: none;
-            font-weight: bold;
-            color:$color-text-b;
-            font-size: $letra-4;
-            &:hover{
-                color: $color-boton-hover;
+        // .container-fluid{
+        // background-color: $color-header;
+        // }
+        .navbar-nav{ 
+            align-items: end;
+            a{
+                padding: 5px 12px;
+                text-decoration: none;
+                font-weight: bold;
+                color:$color-text-b;
+                font-size: $letra-2;
+                &:hover{
+                    color: $color-boton-hover;
+                }
             }
         }
     }

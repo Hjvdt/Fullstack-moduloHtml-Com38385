@@ -7,8 +7,7 @@ button{
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     color:$color-text-w;
     background-color: $color-boton;
-}
-
-button:hover{
-    background-color: $color-boton-hover;
+    &:hover{
+        background-color: $color-boton-hover;
+    }
 }
