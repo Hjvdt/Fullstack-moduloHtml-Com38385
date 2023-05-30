@@ -39,7 +39,7 @@ header {
   background-color: #a583c5;
   width: 100%; }
   header .navbar .navbar-nav {
-    align-items: end; }
+    align-items: center; }
     header .navbar .navbar-nav a {
       padding: 5px 12px;
       text-decoration: none;
@@ -104,6 +104,9 @@ main {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img/resultados.png"); }
       #box-container .contenedor .box .card:nth-child(3) {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img/contactenos.png"); }
+      #box-container .contenedor .box .card:hover {
+        transform: translateY(-0.9375rem);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
 
 #final {
   display: flex;
@@ -155,12 +158,15 @@ main {
     font-size: 3em;
     text-shadow: 4px 4px rgba(0, 0, 0, 0.432);
     padding: 10px;
-    margin-top: 70px; }
+    margin-top: 30px; }
   .bg-contacto .form-horizontal .form-group {
     align-items: center; }
     .bg-contacto .form-horizontal .form-group .bigicon {
       font-size: 35px;
       color: #36A0FF; }
+    .bg-contacto .form-horizontal .form-group .btnl {
+      margin-top: 10px;
+      margin-bottom: 10px; }
 
 .contenedor-turno {
   height: auto; }
@@ -182,13 +188,16 @@ main {
         font-size: 1.0em;
         text-align: justify;
         text-justify: auto; }
+    .contenedor-turno .imgturnos .calendario iframe {
+      width: 200px;
+      height: 200px; }
     .contenedor-turno .imgturnos .busqueda-ind h1 {
       font-size: 2.5em;
       padding: 20px;
       color: white;
       text-shadow: 4px 4px #361e36; }
     .contenedor-turno .imgturnos .busqueda-ind p {
-      padding: 20px;
+      padding: 10px;
       font-size: 1em;
       color: white;
       text-align: justify;
@@ -206,10 +215,12 @@ main {
     font-size: 2.25em;
     font-weight: bold;
     justify-content: center; }
-  .ingreso .container-fluid .container-contacto .form-label {
+  .ingreso .container-fluid .container-contacto {
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px #8f5581; }
+    .ingreso .container-fluid .container-contacto input {
+      width: 200px; }
 
 main .busqueda {
   margin: 0;
@@ -302,13 +313,37 @@ footer {
     .imgturnos iframe {
       width: 300px;
       height: 200px; }
-  .form-label {
-    color: white;
-    text-shadow: 3px 3px #361e36; } }
+  .container-contacto input {
+    width: 400px; } }
 
 @media screen and (min-width: 1024px) {
-  .navbar-nav {
-    font-size: 2em; }
+  #navbarNavAltMarkup {
+    display: flex;
+    justify-content: flex-end; }
+    #navbarNavAltMarkup .navbar-nav {
+      font-size: 2em; }
+  #box-container .contenedor {
+    padding: 0px; }
+    #box-container .contenedor .box {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+      #box-container .contenedor .box .card {
+        width: 280px;
+        height: 400px;
+        border-radius: 15px;
+        box-shadow: 2px 2px #b7adba;
+        overflow: hidden;
+        text-align: center;
+        justify-content: end;
+        gap: 12.5rem;
+        transition: all 0.25s; }
+        #box-container .contenedor .box .card:hover {
+          transform: translateY(-15px);
+          box-shadow: 0 12px 16px #b7adba; }
   #box-container1 h1 {
     font-size: 4em;
     text-shadow: 4px 4px rgba(0, 0, 0, 0.432);
@@ -339,31 +374,90 @@ footer {
       width: 300px;
       height: 200px; }
   .ingreso .container-fluid {
-    height: auto; }
+    height: 100%; }
+    .ingreso .container-fluid label {
+      font-size: 1.75em; }
+    .ingreso .container-fluid .mb-4 .btnl {
+      margin-top: 50px; }
   footer .seguinos {
     padding-right: 40px; } }
 
 @media screen and (min-width: 1440px) {
+  .navbar-brand img {
+    width: 150px; }
+  .navbar-brand #navbarNavAltMarkup {
+    display: flex;
+    justify-content: flex-end;
+    gap: .625rem; }
+    .navbar-brand #navbarNavAltMarkup .navbar-nav a {
+      font-size: 3em;
+      font-weight: bold; }
   #hero {
     font-size: 2em; }
+  #box-container .contenedor {
+    padding: 5px; }
+    #box-container .contenedor h2 {
+      font-size: 3em;
+      text-shadow: 1px 2px 3px black; }
+    #box-container .contenedor .box .card {
+      width: 400px;
+      height: 500px;
+      gap: 100px; }
+      #box-container .contenedor .box .card h3 {
+        font-size: 3em;
+        font-weight: bolder; }
+      #box-container .contenedor .box .card p {
+        display: contents;
+        color: white;
+        font-size: 1.2em;
+        font-weight: bolder;
+        text-shadow: 1px 1px 2px black; }
   #final {
     font-size: 2em;
     text-shadow: 3px 2px blueviolet; }
+  footer .contacto {
+    padding-left: 60px; }
+    footer .contacto p {
+      font-size: 1.5em; }
+    footer .contacto ul {
+      padding-left: 40px; }
+  footer .redes {
+    padding-right: 60px;
+    font-size: 1.5em; }
+    footer .redes .seguinos {
+      padding-right: 40px; }
+  footer .derechos p {
+    font-size: 1em; }
   .contenedor-turno .imgturnos {
     align-items: center; }
     .contenedor-turno .imgturnos .banner-turnos h1 {
       font-size: 4.5em; }
     .contenedor-turno .imgturnos .banner-turnos p {
-      font-size: 3.0em;
+      padding: 10px;
+      font-size: 3em;
       text-align: justify;
       text-justify: auto; }
-    .contenedor-turno .imgturnos iframe {
-      width: 500px;
-      height: 400px; }
+    .contenedor-turno .imgturnos .calendario iframe {
+      width: 700px;
+      height: 500px; }
     .contenedor-turno .imgturnos .busqueda-ind h1 {
       font-size: 4.5em;
       text-shadow: 3px 2px blueviolet; }
     .contenedor-turno .imgturnos .busqueda-ind p {
       font-size: 2.5em;
       text-align: justify;
-      text-justify: auto; } }
+      text-justify: auto; }
+    .contenedor-turno .imgturnos .busqueda-ind input {
+      width: 50%;
+      height: 50px; }
+  .ingreso .container-fluid {
+    height: 100%; }
+    .ingreso .container-fluid .ingresar h1 {
+      font-size: 3em; }
+    .ingreso .container-fluid label {
+      font-size: 2em; }
+    .ingreso .container-fluid .form-control {
+      width: 400px; }
+    .ingreso .container-fluid .mb-4 .btnl {
+      margin-top: 70px;
+      font-size: 2em; } }
