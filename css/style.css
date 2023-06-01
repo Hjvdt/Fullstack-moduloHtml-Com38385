@@ -101,7 +101,7 @@ main {
       #box-container .contenedor .box .card:first-child {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img/turnos.jpg"); }
       #box-container .contenedor .box .card:nth-child(2) {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img/resultados.png"); }
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img/resultados.jpg"); }
       #box-container .contenedor .box .card:nth-child(3) {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img/contactenos.png"); }
       #box-container .contenedor .box .card:hover {
@@ -223,18 +223,33 @@ main {
       width: 200px; }
 
 main .busqueda {
-  margin: 0;
+  margin-left: 0;
+  padding-left: 1px;
   height: auto;
-  width: auto;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img/resultados.png");
+  width: 100%;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img/resultados.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
   main .busqueda h1 {
-    padding-top: 150px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 2.25em;
+    font-weight: bold;
     color: white;
-    text-shadow: 3px 3px rgba(149, 146, 146, 0.933); }
+    text-shadow: 3px 3px rgba(111, 137, 140, 0.933); }
+  main .busqueda p {
+    padding-top: 0px;
+    padding-bottom: 100px;
+    font-size: 1.5em;
+    color: white; }
+  main .busqueda form {
+    padding-bottom: 150px; }
+    main .busqueda form .barra {
+      height: 50px;
+      width: 60%;
+      padding-left: 4px; }
 
 footer {
   display: grid;
@@ -314,7 +329,16 @@ footer {
       width: 300px;
       height: 200px; }
   .container-contacto input {
-    width: 400px; } }
+    width: 400px; }
+  main h1 {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 2.5em; }
+  main p {
+    text-align: center; }
+  main form {
+    text-align: center; } }
 
 @media screen and (min-width: 1024px) {
   #navbarNavAltMarkup {
@@ -407,6 +431,7 @@ footer {
     justify-content: flex-end;
     gap: .625rem; }
     .navbar-brand #navbarNavAltMarkup .navbar-nav a {
+      padding-right: 5px;
       font-size: 3em;
       font-weight: bold; }
   #hero {
@@ -477,4 +502,13 @@ footer {
       width: 400px; }
     .ingreso .container-fluid .mb-4 .btnl {
       margin-top: 70px;
-      font-size: 2em; } }
+      font-size: 2em; }
+  main .busqueda h1 {
+    padding-top: 20px;
+    padding-bottom: 150px;
+    text-align: center;
+    font-size: 3.5em; }
+  main .busqueda p {
+    padding-top: 0px;
+    padding-bottom: 200px;
+    font-size: 2em; } }
