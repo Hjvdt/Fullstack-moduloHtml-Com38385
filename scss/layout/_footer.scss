@@ -10,7 +10,7 @@ footer{
         margin-top: 10px;
         grid-column: 1/2;
         p{
-            font-size: $letra-2;
+            font-size: 1em;
             font-weight: 600;
             padding-left: 10px;
         }
@@ -33,7 +33,7 @@ footer{
         grid-column: 2/3;
         
         p{
-            font-size: $letra-2;
+            font-size: 1em;
             font-weight: 600;
             display: flex;
             flex-direction: row-reverse;
@@ -57,7 +57,7 @@ footer{
         grid-column: 1/3;
         grid-row: 2/3;
         p{
-            font-size: $letra-1;
+            font-size: 0.5em;
             justify-content: center;
 
         }

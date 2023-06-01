@@ -1,7 +1,7 @@
 @media (min-width: 768px){
     #box-container1{
         h1{
-            font-size: $letra-12;
+            font-size: 3.5em;
             text-shadow: 4px 4px rgba(0, 0, 0, 0.432);
             padding-top: 10px;
         }
@@ -11,13 +11,13 @@
                 height: 400px;
             }
             h3{
-                font-size: $letra-10;
+                font-size: 3em;
                 color: $color-text-w;
                 text-shadow: 4px 4px $border-busqueda-h1;
                 padding-top: 10px;
             }
             p{
-                font-size: $letra-3;
+                font-size: 1.25em;
                 margin-left: 10px;
                 margin-right: 10px;
                 text-align: justify;  
@@ -30,7 +30,7 @@
         align-items: center;
         .banner-turnos{
             h1{
-                font-size: $letra-12;
+                font-size: 3.5em;
             }
             p{
                 font-size: 4.0em;

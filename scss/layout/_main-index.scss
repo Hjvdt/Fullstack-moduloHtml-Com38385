@@ -20,15 +20,15 @@ main{
     background-position: center center;
     & h1{
     color: $color-text-w;
-    font-size: $letra-10;
+    font-size: 3em;
     text-shadow: 4px 4px $color-boton-hover;
     }
     & h2{
         color: $color-letra-h2;
-        font-size: $letra-2;
+        font-size: 1em;
     }
     & button{
-        font-size: $letra-4;
+        font-size: 1.25em;
         margin-top: 50px;
     }
 }
@@ -40,13 +40,13 @@ main{
         padding: 50px 12px;
         h2{
             margin-top: 0;
-            font-size: $letra-10;
+            font-size: 3em;
             text-shadow: 3px 3px $b-shadow;
             font-style: italic;
         }
         .box{
             h3{
-                font-size: $letra-6;
+                font-size: 2em;
                 text-shadow: 3px 3px $b-shadow;
             }
             p{
@@ -112,10 +112,10 @@ main{
     background-size: cover;
     background-position: center center;
     h2{
-        font-size: $letra-5;
+        font-size: 2.5em;
     }
     button{
-        font-size: $letra-3;
+        font-size: 1.25em;
         margin-top: 20px;
     }
 }
@@ -127,12 +127,12 @@ main{
     margin-top: 0;
     height: 100%;
     h1{
-        font-size: $letra-7;
+        font-size: 2.25em;
         text-shadow: 4px 4px rgba(0, 0, 0, 0.432);
     }
     .nosotros{ 
         h3{
-            font-size: $letra-5;
+            font-size: 1.75em;
             color: $color-text-w;
             text-shadow: 4px 4px $border-busqueda-h1;
             padding-top: 10px;
@@ -140,7 +140,7 @@ main{
         p{
             margin-left: 10px;
             margin-right: 10px;
-            font-size: 0.5em;
+            font-size: 0.8em;
             text-align: justify;  
             text-justify: auto;
         }
@@ -160,7 +160,7 @@ main{
     .form-horizontal{
         legend{
             color: $color-c;
-            font-size: $letra-10;
+            font-size: 3em;
             text-shadow: 4px 4px rgba(0, 0, 0, 0.432);
             padding: 10px;
             margin-top: 30px;
@@ -249,7 +249,7 @@ main{
         background-position: center center;
         .ingresar h1{
             color: $color-c;
-            font-size: $letra-7;
+            font-size: 2.25em;
             font-weight: bold;
             justify-content: center;
         }
